@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Playing Around with Flexbox</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" type="text/css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.container {
+			display: flex;
+			width: 80%;
+			max-width: 1200px;
+			margin: 0 auto;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.item {
+			background: cornflowerblue;
+			padding: 1em;
+/* 			flex default is 0 1 auto 
+			where 0 is flex-grow, 1 is flex-shrink, and auto is flex-basis
+*/			
+			flex: 1;
+			flex: 0 0 300px;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			border: 1px solid black;
+		}
+		.button {
+			margin-top: auto;
+			text-decoration: none;
+			padding: 1em 2em;
+			background: white;
+			border-radius: .5em;
+			transition: all .3s ease-in-out;
+		}
+		.button:hover {
+			background: gray;
+		}
+	</style>
+</head>
+<body>
+	<h1>Let Me Try Now...</h1>
+	<div class="container">
+		<div class="item">Item 1 <a href="#" class="button">bottom-align</a></div>
+		<div class="item">Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2Item 2<a href="#" class="button">bottom-align</a></div>
+		<div class="item">Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3Item 3<a href="#" class="button">bottom-align</a></div>				
+	</div>
+</body>
+</html>
